@@ -14,7 +14,14 @@
 
 *{
 	text-align: justify;
+  color: black;
 }
+
+
+section a:hover {
+  text-decoration:none;
+}
+
 .container{
 	margin-top: 50px;
 }
