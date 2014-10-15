@@ -15,25 +15,9 @@
     %link(href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72")
     %link(href="images/apple-touch-icon.png" rel="apple-touch-icon-precomposed")
     %link(href="favicon.ico" rel="shortcut icon")
-
+    %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel => "stylesheet"}/
 
   %body
 
-    .container
-
-      .row
-        .span12
-          = bootstrap_flash
-          = yield
-
-      %footer
-        %ul
-          %li
-            %a{:href => "mailto:bruno@bccoelho.com"} bruno@bccoelho.com
-          %li
-            | Lisbon
-    /
-      Javascripts
-      \==================================================
-    / Placed at the end of the document so the pages load faster
-    = javascript_include_tag "application"
+    = bootstrap_flash
+    = yield
